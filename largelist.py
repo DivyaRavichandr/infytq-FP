@@ -1,13 +1,11 @@
 def create_largest_number(number_list):
-    largest_number=0
-    largest_number1=0
-    largest_number2=0
-    largest_number=sorted(number_list,reverse=True)
-    largest_number1=str(largest_number).strip('[]')
-    largest_number2=str(largest_number1).strip(",")
-    return largest_number2
+    result=' '
+    number=list(sorted(number_list,reverse=True))
+    for i in number:
+        result+=str(i)
     
-
-
-largest_number=create_largest_number(number_list=[23,45,67])
-print(largest_number2)
+    return result
+        
+number_list=[23,45,67]
+largest_number=create_largest_number(number_list)
+print(largest_number)
