@@ -12,3 +12,6 @@ p = lambda x:x
 q = lambda x : x%2 == 0
 
 r = lambda x : x%3 == 0
+print(sum_all(p,Q))
+print(sum_all(q,Q))
+print(sum_all(r,Q))
